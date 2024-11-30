@@ -1,4 +1,4 @@
-import { getSortedPostsData } from "@/utils/getSortedPostsData";
+import { getSortedPostsData } from "@/utils/posts";
 import Head from "next/head";
 import Link from "next/link";
 
