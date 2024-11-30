@@ -1,5 +1,6 @@
 import { getSortedPostsData } from "@/utils/getSortedPostsData";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home({ allPostsData }) {
   return (
@@ -16,7 +17,7 @@ export default function Home({ allPostsData }) {
         <ul>
           {allPostsData.map(({ id, date, title }) => (
             <li key={id}>
-              <a>{title}</a>
+              <Link href={`/posts/${id}`}>{title}</Link>
               <br />
               <small>{date}</small>
             </li>
